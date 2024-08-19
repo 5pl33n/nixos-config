@@ -5,7 +5,7 @@
     ./modules/bundle.nix
   ];
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "jackdow"; # Define your hostname.
 
   time.timeZone = "Europe/Rome"; # Set your time zone.
 
