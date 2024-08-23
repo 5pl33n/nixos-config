@@ -24,7 +24,7 @@
     in {
 
     # nixos - system hostname
-    nixosConfigurations.jackdow = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = {
         pkgs-stable = import nixpkgs-stable {
           inherit system;
