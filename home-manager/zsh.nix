@@ -24,11 +24,11 @@
       ll = "eza -lha --icons=auto --sort=name --group-directories-first";
       ld = "eza -lhD --icons=auto";
 
-      .. = "cd ..";
-      ... = "cd ../..";
-      .3 = "cd ../../..";
-      .4 = "cd ../../../..";
-      .5 = "cd ../../../../..";
+      ".." = "cd ..";
+      "..." = "cd ../..";
+      ".3" = "cd ../../..";
+      ".4" = "cd ../../../..";
+      ".5" = "cd ../../../../..";
 
       mkdir = "mkdir -p";
     };
@@ -38,7 +38,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" ];
+      plugins = [ "git" "sudo" "zsh-256color" "zsh-autosuggestions" "zsh-syntax-highlighting" ];
       theme = "agnoster";
     };
   };

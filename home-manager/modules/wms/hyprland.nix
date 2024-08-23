@@ -6,8 +6,7 @@
     settings = {
       "$mainMod" = "SUPER";
 
-      monitor = "eDP-1,1920x1080@60,0x0,1,bitdepth,10";
-      monitor = "HDMI-A-1,1920x1080@60,1920x0,1,bitdepth,10";
+      monitor = [ "eDP-1,1920x1080@60,0x0,1,bitdepth,10" "HDMI-A-1,1920x1080@60,1920x0,1,bitdepth,10" ];
 
       env = [
         "XCURSOR_SIZE,24"
@@ -39,7 +38,7 @@
         touchpad = {
           disable_while_typing = true;  
           natural_scroll = true;
-        }
+        };
       };
 
       general = {
@@ -56,7 +55,7 @@
         drop_shadow = false; 
         blur = {
             enabled = false;
-        }
+        };
       };
 
       animations = {
