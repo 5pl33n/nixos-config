@@ -38,9 +38,9 @@
       ];
     };
 
-    homeConfigurations.spleen = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [ ./home-manager/home.nix ];
-    };
+#    homeConfigurations.spleen = home-manager.lib.homeManagerConfiguration {
+#      pkgs = nixpkgs.legacyPackages.${system};
+#      modules = [ ./home-manager/home.nix ];
+#    };
   };
 }
