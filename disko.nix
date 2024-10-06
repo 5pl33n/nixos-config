@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
       my-disk = {
-        device = "/dev/vda";
+        device = "/dev/sda";
         type = "disk";
         content = {
           type = "gpt";
@@ -17,20 +17,20 @@
               };
             };
 
-            swap = {
-              size = "1G";
-              content = {
-                type = "swap";
-                resumeDevice = true;
-              };
-            };
-
             root = {
               size = "100%";
               content = {
                 type = "filesystem";
                 format = "ext4";
                 mountpoint = "/";
+              };
+            };
+
+            swap = {
+              size = "1G";
+              content = {
+                type = "swap";
+                resumeDevice = true;
               };
             };
           };
