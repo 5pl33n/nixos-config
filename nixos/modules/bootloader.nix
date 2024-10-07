@@ -3,5 +3,5 @@
   boot.loader.efi.canTouchEfiVariables = true;
   # boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelParams = [ "psmouse.synaptics_intertouch=0" ]; 
-  boot.initrd.services.lvm.enable = false
+  boot.initrd.services.lvm.enable = false;
 }
