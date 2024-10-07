@@ -83,8 +83,7 @@
         };
       };
   
-    style = 
-      ''
+    style = ''
       @define-color rosewater #f5e0dc;
       @define-color flamingo #f2cdcd;
       @define-color pink #f5c2e7;
@@ -209,7 +208,7 @@
           padding-left: 6px;
           padding-right: 6px;
       }
-      '';
+    '';
     };
   };
 }
