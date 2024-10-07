@@ -82,6 +82,7 @@
           "format" = "  {:%I:%M %p}";
         };
       };
+    };
   
     style = ''
       @define-color rosewater #f5e0dc;
@@ -209,6 +210,5 @@
           padding-right: 6px;
       }
     '';
-    };
   };
 }
