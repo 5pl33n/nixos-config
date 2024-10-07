@@ -29,33 +29,33 @@
         };
 
         "backlight" = {
-            "max-length" = "4";
-            "format" = "{icon}  {percent}%";
-            "format-icons" = ["" "" "" "" "" "" "" "" ""];
-            "on-scroll-up" = "brightnessctl set 10%-";
-            "on-scroll-down" = "brightnessctl set +10%";
+          "max-length" = "4";
+          "format" = "{icon}  {percent}%";
+          "format-icons" = ["" "" "" "" "" "" "" "" ""];
+          "on-scroll-up" = "brightnessctl set 10%-";
+          "on-scroll-down" = "brightnessctl set +10%";
         };
 
 
         "custom/dunst" = {
-            "exec" = "~/.config/waybar/scripts/dunst.sh";
-            "on-click" = "dunstctl set-paused toggle";
-            "restart-interval" = "1";
-            "tooltip" = "false";
+          "exec" = "~/.config/waybar/scripts/dunst.sh";
+          "on-click" = "dunstctl set-paused toggle";
+          "restart-interval" = "1";
+          "tooltip" = "false";
         };
 
         "wireplumber" = {
-            "format" = "{icon}  {volume}%";
-            "format-muted" = " 󰖁 ";
-            "format-icons" = {
-                "default" = ["", "", ""];
-            };
+          "format" = "{icon}  {volume}%";
+          "format-muted" = " 󰖁 ";
+          "format-icons" = {
+            "default" = ["" "" ""];
+          };
         };
 
         "network" = {
-            "format-wifi" = "󰖩  {signalStrength}%";
-            "format-ethernet" = " 󰈀  ";
-            "format-disconnected" = "  ";
+          "format-wifi" = "󰖩  {signalStrength}%";
+          "format-ethernet" = " 󰈀  ";
+          "format-disconnected" = "  ";
         };
 
         "battery" = {
@@ -63,8 +63,8 @@
           "adapter" = "ADP0";
           "interval" = "60";
           "states" = {
-              "warning" = "30";
-              "critical" = "15";
+            "warning" = "30";
+            "critical" = "15";
           };
           "max-length" = "20";
           "format" = "{icon}  {capacity}%";
@@ -78,8 +78,8 @@
         };
 
         "clock" = {
-            "format-alt" = "  {:%a %b %d}";
-            "format" = "  {:%I:%M %p}";
+          "format-alt" = "  {:%a %b %d}";
+          "format" = "  {:%I:%M %p}";
         };
       };
   
