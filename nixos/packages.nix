@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     # CLI utils
     tree
+    eza
     wget
     git
     htop
