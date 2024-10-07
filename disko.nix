@@ -14,6 +14,7 @@
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
+                mountOptions = [ "umask=0077" ];
               };
             };
 
@@ -27,7 +28,7 @@
             };
 
             swap = {
-              size = "1G";
+              size = "4G";
               content = {
                 type = "swap";
                 resumeDevice = true;
