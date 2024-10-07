@@ -31,7 +31,7 @@
         "backlight" = {
             "max-length" = "4";
             "format" = "{icon}  {percent}%";
-            "format-icons" = ["", "", "", "", "", "", "", "", ""];
+            "format-icons" = ["" "" "" "" "" "" "" "" ""];
             "on-scroll-up" = "brightnessctl set 10%-";
             "on-scroll-down" = "brightnessctl set +10%";
         };
@@ -74,7 +74,7 @@
           "format-plugged" = "  {capacity}%";
           "format-alt" = "{icon}  {time}";
           "format-full" = "  {capacity}%";
-          "format-icons" = ["", "", "", "", ""];
+          "format-icons" = ["" "" "" "" ""];
         };
 
         "clock" = {
