@@ -3,10 +3,9 @@
     enable = true;
     settings = {
       mainBar = {
-        height = 0;
         layer = "top";
         position = "top";
-        height = "24"; 
+        height = 24; 
 
         modules-left = ["cpu" "memory" "backlight"];
         modules-center = ["hyprland/workspaces"];
