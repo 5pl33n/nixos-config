@@ -31,7 +31,7 @@
       };
 
       input = {
-        kb_layout = it;
+        kb_layout = "it";
         follow_mouse = 1;
         sensitivity = 0.5;
         kb_options = caps:swapescape;
