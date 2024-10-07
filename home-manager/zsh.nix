@@ -2,7 +2,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    # enableAutosuggestions = true;
+    enableAutosuggestions = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     shellAliases =
@@ -30,7 +30,7 @@
     history.path = "${config.xdg.dataHome}/zsh/history";
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" "zsh-256color" "zsh-autosuggestions" "zsh-syntax-highlighting" ];
+      plugins = [ "git" "sudo" ];
       theme = "agnoster";
     };
   };
