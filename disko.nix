@@ -17,22 +17,37 @@
                 mountOptions = [ "umask=0077" ];
               };
             };
-
-            root = {
+            primary = {
               size = "100%";
               content = {
-                type = "filesystem";
-                format = "ext4";
-                mountpoint = "/";
+                type = "lvm_pv";
+                vg = "mainpool";
               };
             };
-
             swap = {
               size = "4G";
               content = {
                 type = "swap";
                 resumeDevice = true;
               };
+            };
+          };
+        };
+      };
+    };
+    lvm_vg = {
+      mainpool = {
+        type = "lvm_vg";
+        lvs = {
+          root = {
+            size = "100%";
+            content = {
+              type = "filesystem";
+              format = "ext4";
+              mountpoint = "/";
+              mountOptions = [
+                "defaults"
+              ];
             };
           };
         };
