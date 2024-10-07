@@ -7,9 +7,9 @@
         position = "top";
         height = "24"; 
 
-        modules-left = ["cpu", "memory","backlight"];
+        modules-left = ["cpu" "memory" "backlight"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["wireplumber", "network", "battery", "clock"];
+        modules-right = ["wireplumber" "network" "battery" "clock"];
 
         "hyprland/workspaces" = {
             "all-outputs" = "true";
