@@ -3,6 +3,7 @@
     allowUnfree = true;
   };
   environment.systemPackages = with pkgs; [
+    kitty  
     # CLI utils
     tree
     eza
@@ -24,7 +25,6 @@
     # WMs and stuff
     hyprland
     xdg-desktop-portal-hyprland
-    polybar
     waybar
     # Screenshotting
     grim
