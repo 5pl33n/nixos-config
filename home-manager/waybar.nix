@@ -3,6 +3,7 @@
     enable = true;
     settings = {
       mainBar = {
+        height = 0;
         layer = "top";
         position = "top";
         height = "24"; 
