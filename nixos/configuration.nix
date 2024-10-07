@@ -21,7 +21,7 @@
   services = {
     openssh = {
       enable = true;
-      passwordAuthentication = true;
+      settings.passwordAuthentication = true;
     };
     xserver = {
       xkb.layout = "it";
