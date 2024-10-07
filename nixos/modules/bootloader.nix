@@ -2,5 +2,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   # boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelParams = [ "psmouse.synaptics_intertouch=0" "use_lvmetad=0" ]; 
+  boot.kernelParams = [ "psmouse.synaptics_intertouch=0" ]; 
+  boot.initrd.services.lvm.enable = false
 }
