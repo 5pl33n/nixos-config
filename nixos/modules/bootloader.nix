@@ -2,12 +2,13 @@
   boot.loader.systemd-boot.enable = false;
   boot.loader = {
     grub = {
-      enable                = true;
-      useOSProber           = true;
-      copyKernels           = true;
-      efiSupport            = true;
-      fsIdentifier          = "label";
-      devices               = [ "nodev" ];
+      enable = true;
+      useOSProber = true;
+      copyKernels = true;
+      efiSupport = true;
+      fsIdentifier = "label";
+      device = "/dev/sda";
+      devices = [ "nodev" ];
       extraEntries = ''
         menuentry "Reboot" {
           reboot
