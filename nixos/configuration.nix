@@ -23,6 +23,9 @@
       enable = true;
       passwordAuthentication = true;
     };
+    xserver = {
+      xkb.layout = "it";
+    };
     pipewire = {
       enable = true;
       alsa.enable = true;
