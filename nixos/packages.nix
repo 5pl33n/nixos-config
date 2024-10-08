@@ -6,6 +6,7 @@
     kitty
     spaceship-prompt
     firefox
+    nyxt
     # CLI utils
     vim
     tree

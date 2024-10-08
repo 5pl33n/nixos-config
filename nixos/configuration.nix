@@ -9,8 +9,14 @@
   programs = {
     nixvim = {
       enable = true;
+      defaultEditor = true;
       colorschemes.catppuccin.enable = true;
       plugins.lualine.enable = true;
+      opts = {
+        number = true;
+        relativenumber = true;
+        shiftwidth = 2;
+      };
     };
     zsh.enable = true;
     hyprland.enable = true;
