@@ -61,6 +61,7 @@
     # boot.initrd.kernelModules = [ "amdgpu" ];
     kernelParams = [ "psmouse.synaptics_intertouch=0" ]; 
   };
+  console.keyMap = "it";
   time.timeZone = "Europe/Rome";
   i18n.defaultLocale = "en_US.UTF-8";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ config, pkgs, ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -32,5 +32,8 @@
       plugins = [ "git" "sudo" ];
       theme = "Fishy2";
     };
+    initExtra = ''
+      source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;
+    '';
   };
 }

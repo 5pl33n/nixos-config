@@ -3,7 +3,8 @@
     allowUnfree = true;
   };
   environment.systemPackages = with pkgs; [
-    kitty  
+    kitty
+    spaceship-prompt
     # CLI utils
     tree
     eza
