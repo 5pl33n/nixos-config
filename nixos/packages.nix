@@ -6,6 +6,7 @@
     kitty
     spaceship-prompt
     # CLI utils
+    vim
     tree
     eza
     wget
