@@ -30,7 +30,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "sudo" ];
-      theme = "Fishy2";
+#      theme = "spaceship";
     };
     initExtra = ''
       source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;

@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     kitty
     spaceship-prompt
+    firefox
     # CLI utils
     vim
     tree

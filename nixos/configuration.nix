@@ -7,6 +7,11 @@
     EDITOR = "nvim";
   };
   programs = {
+    nixvim = {
+      enable = true;
+      colorschemes.catppuccin.enable = true;
+      plugins.lualine.enable = true;
+    };
     zsh.enable = true;
     hyprland.enable = true;
   };
@@ -51,7 +56,10 @@
       };
     };
   };
-  security.rtkit.enable = true;
+  security = {
+    rtkit.enable = true;
+    sudo.wheelNeedsPassword = false;
+  };
   boot = {
     loader = {
       systemd-boot.enable = true;
