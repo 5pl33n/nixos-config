@@ -19,7 +19,7 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_AUTO_SCREEN_SCALE_FACTOR,1"
-        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1 "
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
         "XDG_CONFIG_HOME,/home/spleen/.config"
         "GTK_THEME,Catppuccin-Mocha"
         "GTK2_RC_FILES,/home/spleen/.themes/Catppuccin-Mocha/gtk-2.0/gtkrc"
@@ -36,14 +36,14 @@
         sensitivity = 0.5;
         kb_options = "caps:swapescape";
         touchpad = {
-          disable_while_typing = true;  
+          disable_while_typing = true;
           natural_scroll = true;
         };
       };
 
       general = {
-        layout = "master";
-        gaps_in = 2;
+        layout = "dwindle";
+        gaps_in = 0;
         gaps_out = 0;
         gaps_workspaces = 0;
         border_size = 0;
@@ -63,17 +63,17 @@
       };
 
       gestures = {
-        workspace_swipe = true;
-        workspace_swipe_direction_lock = false;
+        workspace_swipe = false;
       };
 
       misc = {
         force_default_wallpaper = 1;
         disable_hyprland_logo = true;
-        background_color = "0x001E1E2E";
+        background_color = "0x00000000";
       };
 
       windowrule = [
+        # xwayland
         "opacity 0.0 override,class:^(xwaylandvideobridge)$"
         "noanim,class:^(xwaylandvideobridge)$"
         "noinitialfocus,class:^(xwaylandvideobridge)$"

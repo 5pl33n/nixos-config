@@ -8,6 +8,7 @@
     firefox
     nyxt
     # CLI utils
+    upower
     vim
     tree
     eza

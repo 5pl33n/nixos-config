@@ -10,7 +10,7 @@
     nixvim = {
       enable = true;
       defaultEditor = true;
-      colorschemes.catppuccin.enable = true;
+      colorschemes.modus.enable = true;
       plugins.lualine.enable = true;
       opts = {
         number = true;
@@ -45,6 +45,7 @@
       # If you want to use JACK applications, uncomment this
       #jack.enable = true;
     };
+    upower.enable = true;
     blueman.enable = true;
     getty.autologinUser = "spleen";
   };
