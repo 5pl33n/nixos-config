@@ -14,7 +14,6 @@
     eza
     wget
     git
-    htop
     unzip
     cava
     zip
@@ -31,6 +30,7 @@
     hyprland
     xdg-desktop-portal-hyprland
     waybar
+    tofi
     # Screenshotting
     grim
     grimblast

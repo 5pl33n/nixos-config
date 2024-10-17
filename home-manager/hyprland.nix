@@ -100,7 +100,7 @@
         "$mainMod, W, togglefloating,"
         "$mainMod, R, exec, $menu"
         "$mainMod, J, togglesplit,"
-        "$mainMod, F, exec, firefox"
+        "$mainMod, F, exec, nyxt"
         "$mainMod, L, exec, swaylock"
         "$mainMod, A, exec, tofi-drun --drun-launch=true"
         "$mainMod, backspace, exec, wlogout -b 6 -c 0 -r 0 -m 0 --protocol layer-shell"
