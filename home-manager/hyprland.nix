@@ -90,7 +90,6 @@
         "once = wl-paste --type text --watch cliphist store"
         "once = wl-paste --type image --watch cliphist store"
         "once = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
-        "once = gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha'"
       ];
 
       bind = [
@@ -160,10 +159,6 @@
         "$mainMod ALT, 8, movetoworkspacesilent, 8"
         "$mainMod ALT, 9, movetoworkspacesilent, 9"
         "$mainMod ALT, 0, movetoworkspacesilent, 10"
-
-        # Scroll through existing workspaces with mainMod + scroll
-        "$mainMod, mouse_down, workspace, e+1"
-        "$mainMod, mouse_up, workspace, e-1"
       ];
 
       bindm = [
