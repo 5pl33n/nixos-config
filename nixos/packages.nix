@@ -8,6 +8,7 @@
     firefox
     nyxt
     # CLI utils
+    busybox
     upower
     vim
     tree
