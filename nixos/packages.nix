@@ -3,7 +3,7 @@
     allowUnfree = true;
   };
   environment.systemPackages = with pkgs; [
-    kitty
+    alacritty
     spaceship-prompt
     firefox
     nyxt

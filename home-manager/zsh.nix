@@ -33,7 +33,11 @@
 #      theme = "spaceship";
     };
     initExtra = ''
-      source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;
+      if [[ "$TERM" != "linux" ]]; then
+        source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;
+      else
+	ZSH_THEME="agnoster"
+      fi
     '';
   };
 }
