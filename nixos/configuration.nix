@@ -3,6 +3,7 @@
     ./hardware-configuration.nix
     ./packages.nix
   ];
+
   environment.variables = {
     EDITOR = "nvim";
   };
@@ -68,6 +69,44 @@
     };
     # boot.initrd.kernelModules = [ "amdgpu" ];
     kernelParams = [ "psmouse.synaptics_intertouch=0" ]; 
+  };
+
+  programs = {
+    nixvim = {
+      enable = true;
+      defaultEditor = true;
+      colorschemes.modus = {
+        enable = true;
+        settings = {
+          dim_inactive = false;
+          hide_inactive_statusline = false;
+          on_colors = "function(colors) end";
+          on_highlights = "function(highlights, colors) end";
+          style = "modus_vivendi";
+          styles = {
+            comments = {
+              italic = true;
+            };
+            functions = { };
+            keywords = {
+              italic = true;
+            };
+            variables = { };
+          };
+          transparent = false;
+          variant = "default";
+        };
+      };
+      plugins.lualine.enable = true;
+      opts = {
+        number = true;
+        relativenumber = true;
+        shiftwidth = 2;
+      };
+    }; 
+
+    zsh.enable = true;
+    hyprland.enable = true;
   };
 
   console.keyMap = "it";
