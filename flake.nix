@@ -3,6 +3,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+#    nur.url = "github:nix-community/NUR";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -11,11 +12,17 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nur, ... }@inputs:
     let
       system = "x86_64-linux";
-
+#      overlays = [
+#        nur.overlay
+#      ];
     in {
     nixosConfigurations.jackdow = nixpkgs.lib.nixosSystem {
       specialArgs = {
@@ -32,8 +39,11 @@
     };
     homeConfigurations.spleen = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs;
+      };
       modules = [ 
-        ./home-manager/home.nix 
+        ./home-manager/home.nix
       ];
     };
   };
