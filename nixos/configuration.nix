@@ -1,8 +1,14 @@
-{ inputs, pkgs, ...}: {
+{ inputs, config, pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
     ./packages.nix
   ];
+
+  nixpkgs.config.packageOverrides = pkgs: {
+    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+  };
 
   environment.variables = {
     EDITOR = "nvim";
@@ -102,8 +108,8 @@
         number = true;
         relativenumber = true;
         shiftwidth = 2;
-	tabstop = 2;
-	expandtab = true;
+        tabstop = 2;
+        expandtab = true;
       };
     }; 
 

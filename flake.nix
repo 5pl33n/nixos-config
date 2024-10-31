@@ -15,6 +15,7 @@
   outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
+
     in {
     nixosConfigurations.jackdow = nixpkgs.lib.nixosSystem {
       specialArgs = {
