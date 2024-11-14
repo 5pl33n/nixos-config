@@ -3,6 +3,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+    hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,10 +13,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, hyprpanel, ... }@inputs:
     let
       system = "x86_64-linux";
-
     in {
     nixosConfigurations.jackdow = nixpkgs.lib.nixosSystem {
       specialArgs = {
@@ -31,7 +31,16 @@
       ];
     };
     homeConfigurations.spleen = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [
+          inputs.hyprpanel.overlay
+        ];
+      };
+      extraSpecialArgs = {
+        inherit system;
+        inherit inputs;
+      };
       modules = [ 
         ./home-manager/home.nix 
       ];

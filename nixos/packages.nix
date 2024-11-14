@@ -29,7 +29,7 @@
     # WMs and stuff
     hyprland
     xdg-desktop-portal-hyprland
-    waybar
+    #waybar
     tofi
     # Screenshotting
     grim

@@ -82,8 +82,8 @@
       ];
 
       exec-once = [
-        "once = waybar"
-        "once = dunst"
+        "once = hyprpanel"
+#        "once = dunst"
         "once = blueman-applet"
         "once = /usr/lib/polkit-kde-authentication-agent-1"
         "once = ~/.config/hypr/scripts/xdph.sh"
