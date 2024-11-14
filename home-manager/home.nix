@@ -31,11 +31,11 @@
       clock24 = true;
       historyLimit = 10000;
       keyMode = "vi";
+      plugins = with pkgs.tmuxPlugins; [
+      ];
       extraConfig = ''
         set -g renumber-windows on
         set -g set-clipboard on
-        set -g status-right ' #{cpu_percentage}  %H:%M '
-        run-shell ${pkgs.tmuxPlugins.cpu}/share/tmux-plugins/cpu/cpu.tmux
       '';
     };
 
@@ -43,6 +43,7 @@
       enable = true;
       settings = {
         colors.primary.background = "#000000";
+        selection.save_to_clipboard = true;
       };
     };
 

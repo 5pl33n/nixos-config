@@ -38,6 +38,9 @@
       else
         ZSH_THEME="agnoster"
       fi
+      if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ linux ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+        exec tmux
+      fi
     '';
   };
 }
