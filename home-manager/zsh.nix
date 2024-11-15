@@ -32,14 +32,17 @@
       plugins = [ "git" "sudo" ];
 #      theme = "spaceship";
     };
+    prezto = {
+      tmux = {
+        autoStartLocal = true;
+        defaultSessionName = "jackdow";
+      };
+    };
     initExtra = ''
       if [[ "$TERM" != "linux" ]]; then
         source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;
       else
         ZSH_THEME="agnoster"
-      fi
-      if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ linux ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-        exec tmux
       fi
     '';
   };

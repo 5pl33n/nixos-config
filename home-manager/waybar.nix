@@ -85,8 +85,8 @@
     };
   
     style = ''
-      @define-color foreground #eff0f1;
-      @define-color foreground-inactive #7f8c8d;
+      @define-color foreground #008000;
+      @define-color foreground-inactive #8FBC8F;
       @define-color background #000000;
 
       * {
