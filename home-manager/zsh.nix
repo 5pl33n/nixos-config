@@ -35,22 +35,22 @@
     prezto = {
       enable = true;
       pmodules = [
-        environment
-        utility
-        archive
-        completion
-        directory
-        fasd
-        git
-        python
-        syntax-highlighting
-        prompt
-        hisotory
-        history-substring-search
-        autosuggestion
-        tmux
-        docker
-        editor
+        "environment"
+        "utility"
+        "archive"
+        "completion"
+        "directory"
+        "fasd"
+        "git"
+        "python"
+        "syntax-highlighting"
+        "prompt"
+        "hisotory"
+        "history-substring-search"
+        "autosuggestion"
+        "tmux"
+        "docker"
+        "editor"
       ];
       caseSensitive = false;
       prompt.theme = "random";
