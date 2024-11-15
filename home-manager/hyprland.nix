@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -82,7 +82,7 @@
       ];
 
       exec-once = [
-        "once = hyprpanel"
+        "once = ${pkgs.hyprpanel}/bin/hyprpanel"
 #        "once = dunst"
         "once = blueman-applet"
         "once = /usr/lib/polkit-kde-authentication-agent-1"
