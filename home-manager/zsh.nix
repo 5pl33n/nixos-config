@@ -53,7 +53,7 @@
         "editor"
       ];
       caseSensitive = false;
-      prompt.theme = "random";
+      prompt.theme = "nicoulaj";
       editor.keymap = "vi";
       syntaxHighlighting.pattern = {
         "rm*-rf*" = "fg=white,bold,bg=red";
