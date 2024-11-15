@@ -25,6 +25,7 @@
   programs = {
     tmux = {
       enable = true;
+      terminal = "xterm-256color";
       shortcut = "a";
       baseIndex = 1;
       escapeTime = 0;
@@ -34,6 +35,7 @@
       plugins = with pkgs.tmuxPlugins; [
       ];
       extraConfig = ''
+        set-option -g status-position top
         set -g status-bg "#000000"
         set -g status-fg "#008000"
         set -g renumber-windows on
