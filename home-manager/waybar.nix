@@ -93,7 +93,7 @@
 
       * {
           font-family: "CaskaydiaCove Nerd Font";
-          font-size: 17px;
+          font-size: 14px;
           padding: 0;
           margin: 0;
       }
