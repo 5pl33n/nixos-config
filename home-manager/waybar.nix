@@ -30,8 +30,8 @@
         };
 
         "temperature" = {
-            "format" = " {temperatureC}°C"
-        },
+          "format" = " {temperatureC}°C";
+        };
 
         "backlight" = {
           "max-length" = "4";
