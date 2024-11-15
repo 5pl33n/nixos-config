@@ -9,8 +9,8 @@
         height = 24; 
 
         modules-left = ["battery" "cpu" "memory" "temperature"];
-        modules-center = ["hyprland/workspaces"];
-        modules-right = ["wireplumber" "backlight" "network" "clock"];
+        modules-center = [ "backlight" "clock" "wireplumber"];
+        modules-right = ["network" "hyprland/workspaces"];
 
         "hyprland/workspaces" = {
           "all-outputs" = "true";
@@ -81,7 +81,7 @@
         };
 
         "clock" = {
-          "format-alt" = "{:%d.%m.%Y | %H:%M}";
+          "format" = "{:%d.%m.%Y | %H:%M}";
         };
       };
     };
