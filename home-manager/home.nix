@@ -34,7 +34,7 @@
       plugins = with pkgs.tmuxPlugins; [
       ];
       extraConfig = ''
-        set -g status-bg #008000
+        set -g status-bg "#008000"
         set -g renumber-windows on
         set -g set-clipboard on
       '';
