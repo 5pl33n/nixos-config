@@ -90,7 +90,7 @@
       @define-color background #000000;
 
       * {
-          font-family: CaskaydiaCove Nerd Font
+          font-family: "CaskaydiaCove Nerd Font";
           font-size: 17px;
           padding: 0;
           margin: 0;
