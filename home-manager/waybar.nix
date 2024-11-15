@@ -8,7 +8,7 @@
         spacing = 5;
         height = 24; 
 
-        modules-left = ["cpu" "memory" "temperature" "hyprland/workspaces"];
+        modules-left = ["cpu" "memory" "temperature"];
         modules-center = ["clock"];
         modules-right = ["backlight" "wireplumber" "network" "battery"];
 
@@ -19,7 +19,7 @@
 
         "cpu" = {
           "interval" = "10";
-          "format" = " {usage}%";
+          "format" = " {usage}% ";
           "max-length" = "30";
         };
 
