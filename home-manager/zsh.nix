@@ -14,37 +14,60 @@
       hms = "home-manager switch --flake ${flakeDir}";
       conf = "nvim ${flakeDir}/nixos/configuration.nix";
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
-      l = "eza -lh  --icons=auto";
-      ls = "eza -1   --icons=auto";
-      ll = "eza -lha --icons=auto --sort=name --group-directories-first";
-      ld = "eza -lhD --icons=auto";
-      ".." = "cd ..";
-      "..." = "cd ../..";
-      ".3" = "cd ../../..";
-      ".4" = "cd ../../../..";
-      ".5" = "cd ../../../../..";
-      mkdir = "mkdir -p";
-    };
+    #   l = "eza -lh  --icons=auto";
+    #   ls = "eza -1   --icons=auto";
+    #   ll = "eza -lha --icons=auto --sort=name --group-directories-first";
+    #   ld = "eza -lhD --icons=auto";
+    #   ".." = "cd ..";
+    #   "..." = "cd ../..";
+    #   ".3" = "cd ../../..";
+    #   ".4" = "cd ../../../..";
+    #   ".5" = "cd ../../../../..";
+    #   mkdir = "mkdir -p";
+    # };
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" "sudo" ];
+#    oh-my-zsh = {
+#      enable = true;
+#      plugins = [ "git" "sudo" ];
 #      theme = "spaceship";
     };
     prezto = {
       enable = true;
+      pmodules = [
+        environment
+        utility
+        archive
+        completion
+        directory
+        fasd
+        git
+        python
+        syntax-highlighting
+        prompt
+        hisotory
+        history-substring-search
+        autosuggestion
+        tmux
+        docker
+        editor
+      ];
+      caseSensitive = false;
+      prompt.theme = "random";
+      editor.keymap = "vi";
+      syntaxHighlighting.pattern = {
+        "rm*-rf*" = "fg=white,bold,bg=red";
+      };
       tmux = {
         autoStartLocal = true;
         defaultSessionName = "jackdow";
       };
+      python = {
+        virtualenvAutoSwitch = true;
+        virtualenvAutoSwitch = true;
+      };
     };
     initExtra = ''
-      if [[ "$TERM" != "linux" ]]; then
-        source ${pkgs.spaceship-prompt}/share/zsh/themes/spaceship.zsh-theme;
-      else
-        ZSH_THEME="agnoster"
-      fi
     '';
   };
 }
