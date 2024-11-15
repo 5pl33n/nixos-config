@@ -50,8 +50,15 @@
       caseSensitive = false;
       prompt.theme = "nicoulaj";
       editor.keymap = "vi";
-      syntaxHighlighting.pattern = {
-        "rm*-rf*" = "fg=white,bold,bg=red";
+      syntaxHighlighting = {
+        styles = {
+          builtin = "fg=#008000";
+          command = "fg=#008000";
+          function = "fg=#008000";
+        };
+        pattern = {
+          "rm*-rf*" = "fg=white,bold,bg=red";
+        };
       };
       tmux = {
         autoStartLocal = true;
