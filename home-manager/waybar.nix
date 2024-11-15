@@ -29,8 +29,8 @@
           "max-length" = "10";
         };
 
-        "temperature": {
-            "format": " {temperatureC}°C"
+        "temperature" = {
+            "format" = " {temperatureC}°C"
         },
 
         "backlight" = {
