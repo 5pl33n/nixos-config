@@ -85,129 +85,53 @@
     };
   
     style = ''
-      @define-color rosewater #f5e0dc;
-      @define-color flamingo #f2cdcd;
-      @define-color pink #f5c2e7;
-      @define-color mauve #cba6f7;
-      @define-color red #f38ba8;
-      @define-color maroon #eba0ac;
-      @define-color peach #fab387;
-      @define-color yellow #f9e2af;
-      @define-color green #a6e3a1;
-      @define-color teal #94e2d5;
-      @define-color sky #89dceb;
-      @define-color sapphire #74c7ec;
-      @define-color blue #89b4fa;
-      @define-color lavender #b4befe;
-      @define-color text #cdd6f4;
-      @define-color subtext1 #bac2de;
-      @define-color subtext0 #a6adc8;
-      @define-color overlay2 #9399b2;
-      @define-color overlay1 #7f849c;
-      @define-color overlay0 #6c7086;
-      @define-color surface2 #585b70;
-      @define-color surface1 #45475a;
-      @define-color surface0 #313244;
-      @define-color base #1e1e2e;
-      @define-color mantle #181825;
-      @define-color crust #11111b;
+      @define-color foreground #eff0f1;
+      @define-color foreground-inactive #7f8c8d;
+      @define-color background #000000;
 
       * {
-          font-family: "CaskaydiaCove Nerd Font";
-          font-size: 14px;
-          min-height: 0;
-          border-radius: 0;
+          font-family: Cascadia Nerd Font;
+          font-size: 17px;
+          padding: 0;
+          margin: 0;
       }
 
-      window#waybar {
-          background-color: @base;
+      #waybar {
           color: @foreground;
-      }
-
-      #window {
-          margin: 2px;
-          padding-left: 8px;
-          padding-right: 8px;
+          background-color: @background;
       }
 
       #workspaces button {
-          color: @text;
-          border-bottom: 2px solid @text;
+          padding-left: 1em;
+          padding-right: 1.3em;
       }
 
-      #workspaces button:focus {
-          color: @base;
+      #workspaces button.empty {
+          color: @foreground-inactive;
       }
 
       #workspaces button.active {
-          color: @red;
-          border-bottom: 2px solid @red;
+          background-color: @background-alt;
+          border-radius: 3px;
       }
 
-      #workspaces,
-      #network,
-      #pipewire,
-      #clock,
-      #battery,
-      #cpu,
-      #memory,
-      #disk,
-      #temperature,
-      #backlight,
       #wireplumber,
+      #bat,
       #tray,
-      #mode,
-      #scratchpad {
-          margin: 2px;
-          padding-left: 4px;
-          padding-right: 4px;
+      #usage,
+      #net {
+          background-color: @background-alt;
+          border-radius: 3px;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+          margin-left: 0.3em;
       }
 
-      #clock {
-          color: @maroon;
-          border-bottom: 2px solid @maroon;
-      }
-
-      #clock.date {
-          color: @mauve;
-          border-bottom: 2px solid @mauve;
-      }
-
-      #wireplumber {
-          color: @blue;
-          border-bottom: 2px solid @blue;
-      }
-
+      #battery,
+      #memory,
+      #language,
       #network {
-          color: @yellow;
-          border-bottom: 2px solid @yellow;
-      }
-
-      #cpu {
-          color: @peach;
-          border-bottom: 2px solid @peach;
-      }
-
-      #memory {
-          color: @sky;
-          border-bottom: 2px solid @sky;
-      }
-
-      #backlight {
-          color: @lavander;
-          border-bottom: 2px solid @lavander;
-      }
-
-      #battery {
-          color: @green;
-          border-bottom: 2px solid @green;
-      }
-
-      #custom-vpn {
-          color: @lavender;
-          border-radius: 15px;
-          padding-left: 6px;
-          padding-right: 6px;
+          margin-right: 0.8em;
       }
     '';
   };
