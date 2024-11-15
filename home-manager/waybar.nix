@@ -87,9 +87,9 @@
     };
   
     style = ''
-      @define-color background #008000;
+      @define-color foreground #008000;
       @define-color foreground-inactive #8FBC8F;
-      @define-color foreground #000000;
+      @define-color background #000000;
 
       * {
           font-family: "CaskaydiaCove Nerd Font";
