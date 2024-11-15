@@ -31,7 +31,7 @@
 #      enable = true;
 #      plugins = [ "git" "sudo" ];
 #      theme = "spaceship";
-    };
+#    };
     prezto = {
       enable = true;
       pmodules = [
