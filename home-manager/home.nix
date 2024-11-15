@@ -35,7 +35,6 @@
       plugins = with pkgs.tmuxPlugins; [
       ];
       extraConfig = ''
-        set-option -g status-position top
         set -g status-bg "#000000"
         set -g status-fg "#008000"
         set -g renumber-windows on

@@ -33,6 +33,7 @@
 #      theme = "spaceship";
     };
     prezto = {
+      enable = true;
       tmux = {
         autoStartLocal = true;
         defaultSessionName = "jackdow";
