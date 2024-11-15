@@ -8,9 +8,9 @@
         spacing = 5;
         height = 24; 
 
-        modules-left = ["battery" "cpu" "memory" "temperature"];
-        modules-center = [ "backlight" "clock" "wireplumber"];
-        modules-right = ["network" "hyprland/workspaces"];
+        modules-left = ["cpu" "memory" "temperature" "hyprland/workspaces"];
+        modules-center = ["clock"];
+        modules-right = ["backlight" "wireplumber" "network" "battery"];
 
         "hyprland/workspaces" = {
           "all-outputs" = "true";
