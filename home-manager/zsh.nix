@@ -24,7 +24,7 @@
     #   ".4" = "cd ../../../..";
     #   ".5" = "cd ../../../../..";
     #   mkdir = "mkdir -p";
-    # };
+    };
     history.size = 10000;
     history.path = "${config.xdg.dataHome}/zsh/history";
 #    oh-my-zsh = {
