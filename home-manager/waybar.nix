@@ -20,7 +20,7 @@
         "cpu" = {
           "interval" = "10";
           "format" = " {usage}%";
-          "max-length" = "20";
+          "max-length" = "30";
         };
 
         "memory" = {
