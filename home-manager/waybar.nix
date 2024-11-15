@@ -20,18 +20,18 @@
         "cpu" = {
           "interval" = "10";
           "format" = " {usage}%";
-          "max-length" = "40";
+          "max-length" = "30";
         };
 
         "memory" = {
           "interval" = "30";
           "format" = "  {}%";
-          "max-length" = "20";
+          "max-length" = "30";
         };
 
         "temperature" = {
           "format" = " {temperatureC}°C";
-          "max-length" = "20";
+          "max-length" = "30";
         };
 
         "backlight" = {
@@ -98,6 +98,7 @@
           margin: 0;
       }
 
+      #workspaces,
       #waybar {
           color: @foreground;
           background-color: @background;
