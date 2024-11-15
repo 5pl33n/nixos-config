@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -82,14 +82,14 @@
       ];
 
       exec-once = [
-        "once = waybar"
-        "once = dunst"
-        "once = blueman-applet"
-        "once = /usr/lib/polkit-kde-authentication-agent-1"
-        "once = ~/.config/hypr/scripts/xdph.sh"
-        "once = wl-paste --type text --watch cliphist store"
-        "once = wl-paste --type image --watch cliphist store"
-        "once = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+        "${pkgs.waybar}/bin/waybar"
+        "dunst"
+        "blueman-applet"
+        "/usr/lib/polkit-kde-authentication-agent-1"
+        "~/.config/hypr/scripts/xdph.sh"
+        "wl-paste --type text --watch cliphist store"
+        "wl-paste --type image --watch cliphist store"
+        "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
       ];
 
       bind = [

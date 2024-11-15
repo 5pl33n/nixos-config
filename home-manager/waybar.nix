@@ -90,7 +90,7 @@
       @define-color background #000000;
 
       * {
-          font-family: Cascadia Nerd Font;
+          font-family: CaskaydiaCove Nerd Font
           font-size: 17px;
           padding: 0;
           margin: 0;
@@ -120,7 +120,6 @@
       #tray,
       #usage,
       #net {
-          background-color: @background-alt;
           border-radius: 3px;
           padding-left: 0.5em;
           padding-right: 0.5em;
