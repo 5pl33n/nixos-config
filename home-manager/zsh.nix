@@ -63,7 +63,7 @@
         defaultSessionName = "jackdow";
       };
       python = {
-        virtualenvAutoSwitch = true;
+        virtualenvInitialize = true;
         virtualenvAutoSwitch = true;
       };
     };
