@@ -5,20 +5,21 @@
       mainBar = {
         layer = "top";
         position = "top";
+        spacing = 5;
         height = 24; 
 
-        modules-left = ["cpu" "memory" "backlight"];
+        modules-left = ["battery" "cpu" "memory"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["wireplumber" "network" "battery" "clock"];
+        modules-right = ["wireplumber" "backlight" "network" "clock"];
 
         "hyprland/workspaces" = {
-            "all-outputs" = "true";
-            "on-click" = "activate";
+          "all-outputs" = "true";
+          "on-click" = "activate";
         };
 
         "cpu" = {
           "interval" = "10";
-          "format" = "  {usage}%";
+          "format" = " {usage}%";
           "max-length" = "10";
         };
 
@@ -28,14 +29,17 @@
           "max-length" = "10";
         };
 
+        "temperature": {
+            "format": " {temperatureC}°C"
+        },
+
         "backlight" = {
           "max-length" = "4";
-          "format" = "{icon}  {percent}%";
+          "format" = "{icon} {percent}%";
           "format-icons" = ["" "" "" "" "" "" "" "" ""];
           "on-scroll-up" = "brightnessctl set 10%-";
           "on-scroll-down" = "brightnessctl set +10%";
         };
-
 
         "custom/dunst" = {
           "exec" = "~/.config/waybar/scripts/dunst.sh";
@@ -45,8 +49,8 @@
         };
 
         "wireplumber" = {
-          "format" = "{icon}  {volume}%";
-          "format-muted" = " 󰖁 ";
+          "format" = "{icon} {volume}%";
+          "format-muted" = " 󰖁  ";
           "format-icons" = {
             "default" = ["" "" ""];
           };
@@ -67,19 +71,16 @@
             "critical" = "15";
           };
           "max-length" = "20";
-          "format" = "{icon}  {capacity}%";
-          "format-warning" = "{icon}  {capacity}%";
-          "format-critical" = "{icon}  {capacity}%";
-          "format-charging" = "  {capacity}%";
-          "format-plugged" = "  {capacity}%";
-          "format-alt" = "{icon}  {time}";
-          "format-full" = "  {capacity}%";
+          "format" = "{icon} {capacity}%";
+          "format-charging" = " {capacity}%";
+          "format-plugged" = " {capacity}%";
+          "format-alt" = "{icon} {time}";
+          "format-full" = " {capacity}%";
           "format-icons" = ["" "" "" "" ""];
         };
 
         "clock" = {
-          "format-alt" = "  {:%a %b %d}";
-          "format" = "  {:%I:%M %p}";
+          "format-alt" = "{:%d.%m.%Y | %H:%M}";
         };
       };
     };
@@ -111,7 +112,7 @@
       }
 
       #workspaces button.active {
-          background-color: @background-alt;
+          background-color: @background;
           border-radius: 3px;
       }
 
