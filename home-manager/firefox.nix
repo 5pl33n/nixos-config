@@ -93,6 +93,34 @@
           display: none !important;
         }
 
+        #context-navigation,
+        #context-savepage,
+        #context-pocket,
+        #context-sendpagetodevice,
+        #context-selectall,
+        #context-viewsource,
+        #context-inspect-a11y,
+        #context-sendlinktodevice,
+        #context-openlinkinusercontext-menu,
+        #context-bookmarklink,
+        #context-savelink,
+        #context-savelinktopocket,
+        #context-sendlinktodevice,
+        #context-searchselect,
+        #context-sendimage,
+        #context-print-selection {
+          display: none !important;
+        }
+
+        #context_bookmarkTab,
+        #context_moveTabOptions,
+        #context_sendTabToDevice,
+        #context_reopenInContainer,
+        #context_selectAllTabs,
+        #context_closeTabOptions {
+          display: none !important;
+        }
+
       '';
       userContent = ''
         @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
