@@ -123,7 +123,10 @@
 
       '';
       userContent = ''
-        @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+        @-moz-document url(about:blank), url(about:newtab), url(about:home), url(about:privatebrowsing {
+          html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+            background-color: #000000 !important;
+          }
           body {
             background-color: #000000 !important;
             foreground-color: #008000 !important;
@@ -131,6 +134,10 @@
 
           .search-wrapper {
             display: none;
+          }
+
+          :root{
+            scrollbar-width: none !important;
           }
         }
       '';
