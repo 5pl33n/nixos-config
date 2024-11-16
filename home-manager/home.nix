@@ -83,8 +83,14 @@
 
   gtk = {
     enable = true;
-    theme.package = pkgs.material-black-colors;
-    theme.name = "Material-Black-Plum";
+    gtk3.extraCss = ''
+      background-color: #000000 !important;
+      color: #008000 !important;
+    '';
+    gtk4.extraCss = ''
+      background-color: #000000 !important;
+      color: #008000 !important;
+    '';
   };
 
   qt = {
