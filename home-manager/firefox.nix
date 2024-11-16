@@ -73,6 +73,17 @@
           outline-offset: none !important;
         }
 
+        /* Text Boxes */
+        textarea,
+        input[type="text"],
+        input[type="search"],
+        input[type="password"],
+        select {
+          background-color: var(--main-color) !important;
+          color: var(--secondary-color) !important;
+          border: 1px solid var(--secondary-color) !important;
+        }
+
         /* Menus and Dropdowns */
         menu,
         menuitem,
@@ -81,6 +92,13 @@
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
           border: none !important;
+        }
+
+        /* Focused and Active States */
+        *:focus,
+        *:active {
+          outline: 3px solid var(--secondary-color) !important;
+          outline-offset: 2px;
         }
 
         /* General Toolbar */
