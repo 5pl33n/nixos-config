@@ -33,7 +33,7 @@
         }
 
         #customized-input:-moz-focusring {
-          color: #008000 !important;
+          boreder-color: #008000 !important;
         }
 
         #urlbar:not(.hidden-focus)[focused="true"],
