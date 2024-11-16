@@ -34,13 +34,8 @@
 
         input:focus-visible {
           outline: 2px solid #008000 !important;
-          border-radius: 3px;
-        }
-
-        select:focus-visible {
           border: 2px dashed #008000 !important;
           border-radius: 3px;
-          outline: none;
         }
 
         #urlbar:not(.hidden-focus)[focused="true"],
