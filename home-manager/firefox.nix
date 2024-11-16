@@ -32,7 +32,7 @@
         }
 
         .searchInput:focus {
-          border-color: #008000;
+          border-color: #008000 !important;
         }
 
         #bookmarks-menu,
