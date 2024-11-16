@@ -67,21 +67,8 @@
           color: var(--secondary-color) !important;
         }
 
-        #navigator-toolbox::after {
-          border-bottom: 0px !important;
-        }
-
         #navigator-toolbox {
           border: none !important;
-        }
-
-        #nav-bar:not([tabs-hidden='true']) {
-          box-shadow: none;
-        }
-
-        #nav-bar {
-          box-shadow: none !important;
-          border-top: none !important;
         }
 
         #TabsToolbar {
