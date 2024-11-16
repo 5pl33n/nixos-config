@@ -32,6 +32,10 @@
           color: var(--secondary-color) !important;
         }
 
+        #customized-input:-moz-focusring {
+          color: #008000 !important;
+        }
+
         #urlbar:not(.hidden-focus)[focused="true"],
         .searchbar-textbox[focused="true"] {
           border-color: var(--secondary-color) !important;
