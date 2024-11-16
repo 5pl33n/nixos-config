@@ -31,6 +31,10 @@
           color: var(--secondary-color) !important;
         }
 
+        .searchInput:focus {
+          border-color: #008000;
+        }
+
         #bookmarks-menu,
         tab {
           visibility: collapse;
