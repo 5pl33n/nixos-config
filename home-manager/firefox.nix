@@ -24,6 +24,10 @@
         
         html, body {
           color: var(--secondary-color) !important;
+          border: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          box-shadow: none !important;
         }
         
         /* Sidebar */
