@@ -53,6 +53,7 @@
 
         #searchbar {
           font-size: 22px !important;
+          border: none !important;
           color: var(--secondary-color) !important;
         }
 
