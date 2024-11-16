@@ -85,10 +85,18 @@
         }
 
         /* Menus and Dropdowns */
-        menu,
-        menuitem,
-        menulist,
-        .popup-notification {
+
+        menuitem:hover,
+        menupopup > menu:hover,
+        menupopup > menucaption:hover  {
+          background-color: var(--main-color) !important;
+          color: var(--secondary-color) !important;
+          border: none !important;
+        }
+
+        #appMenu-popup toolbarbutton.subviewbutton:not([disabled],
+        [open],
+        :active):is(:hover) {
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
           border: none !important;
