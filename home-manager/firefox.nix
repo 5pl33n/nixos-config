@@ -52,7 +52,7 @@
 
         #searchbar {
           font-size: 22px !important;
-          color: color: var(--secondary-color) !important;
+          color: var(--secondary-color) !important;
         }
 
         #PersonalToolbar,
@@ -63,7 +63,7 @@
         #urlbar:focus,
         #urlbar-input {
           background-color: var(--main-color) !important;
-          color: #346751 !important;
+          color: var(--secondary-color) !important;
         }
 
         #nav-bar {
