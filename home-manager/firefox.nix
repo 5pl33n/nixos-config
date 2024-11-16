@@ -25,18 +25,19 @@
           --tab-shadow-max-size: 0px !important;
           --tab-block-margin: 0px !important;
         }
+        #sidebar-box,
+        .sidebar-placesTree {
+          background-color: var(--main-color) !important;
+          color: var(--secondary-color) !important;
+        }
+
         #bookmarks-menu,
         tab {
           visibility: collapse;
         }
-        ::-moz-placeholder {
-          color: red;
-          opacity: 0 !important;
-          display: none !important;
-        }
 
-        .tab-icon-image {
-          display: none;
+        .urlbarView {
+          display: none !important;
         }
 
         #urlbar {
@@ -69,6 +70,11 @@
         #navigator-toolbox::after {
           border-bottom: 0px !important;
         }
+
+        #nav-bar:not([tabs-hidden='true']) {
+          box-shadow: none;
+        }
+
         #nav-bar {
           box-shadow: none !important;
           border-top: none !important;
@@ -87,47 +93,6 @@
           margin: 0;
         }
 
-        .titlebar-close {
-          list-style-image: url(https://cdn-icons-png.flaticon.com/512/14035/14035711.png) !important;
-          padding: 0px !important;
-          margin-left: 20px !important;
-          margin-right: 20px !important;
-        }
-
-        .titlebar-max,
-        .titlebar-restore {
-          list-style-image: url(https://cdn-icons-png.flaticon.com/512/14035/14035769.png) !important;
-          margin-left: 20px !important;
-          padding: 0 !important;
-        }
-
-        .titlebar-min {
-          -moz-default-appearance: -moz-window-button-maximize;
-          list-style-image: url(img/yellow-circle.png) !important;
-          padding: 0 !important;
-        }
-
-        .titlebar-button {
-          & > .toolbarbutton-icon {
-            width: 20px !important;
-            height: 20px !important;
-          }
-        }
-
-        .titlebar-button:hover {
-          background-color: transparent !important;
-          border-radius: 10px !important;
-        }
-
-        tab:is([visuallyselected], [multiselected]) {
-          color: var(--secondary-color) !important;
-          background-color: var(--main-color) !important;
-        }
-
-        :root:not(:-moz-lwtheme) {
-          --tab-selected-bgcolor: rgba(20, 80, 20, 0.174) !important;
-        }
-
         #import-button {
           display: none;
         }
@@ -136,11 +101,6 @@
           display: none !important;
         }
 
-        toolbarbutton.bookmark-item:not(.subviewbutton) {
-          &:not([disabled], [open]):hover {
-            background-color: rgba(20, 80, 20, 0.174) !important;
-          }
-        }
       '';
       userContent = ''
         @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
