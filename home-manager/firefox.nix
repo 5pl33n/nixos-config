@@ -11,6 +11,7 @@
         vimium
         sidebery
         ublock-origin
+        darkreader
       ];
       userChrome = ''
         * {
@@ -66,7 +67,7 @@
         }
 
         #nav-bar {
-          margin-top: -1px !important;
+          margin-top: 0 !important;
         }
 
         #TabsToolbar {
