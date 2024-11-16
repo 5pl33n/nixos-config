@@ -21,7 +21,7 @@
         }
         html,
         body {
-          color: var(--secondary-color) I !important;
+          color: var(--secondary-color) !important;
           --tab-shadow-max-size: 0px !important;
           --tab-block-margin: 0px !important;
         }
@@ -41,7 +41,7 @@
 
         #urlbar {
           font-size: 22px !important;
-          color: white !important;
+          color: var(--secondary-color) !important;
           font-family: Iosevka Web, Consolas, Courier, monospace;
           background-color: #000000;
         }
