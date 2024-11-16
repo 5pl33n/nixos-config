@@ -81,6 +81,12 @@
     };
   };
 
+  gtk = {
+    enable = true;
+    theme.package = pkgs.material-black-colors;
+    theme.name = "Material-Black-Plum";
+  };
+
   qt = {
     enable = true;
     platformTheme = {
