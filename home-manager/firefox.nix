@@ -31,6 +31,8 @@
         }
         
         /* Sidebar */
+        #sidebar,
+        #sidebar-splitter,
         #sidebar-box,
         .sidebar-placesTree {
           background-color: var(--main-color) !important;
