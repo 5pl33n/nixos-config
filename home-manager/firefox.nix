@@ -52,7 +52,7 @@
 
         #searchbar {
           font-size: 22px !important;
-          color: white !important;
+          color: color: var(--secondary-color) !important;
         }
 
         #PersonalToolbar,
