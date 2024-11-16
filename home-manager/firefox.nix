@@ -39,6 +39,7 @@
 
         *:focus,
         *:focus-visble {
+          border-color: #008000 !important;
           outline: 3px solid #008000 !important;
           outline-offset: 3px !important;
         }
