@@ -31,7 +31,11 @@
         .sidebar-placesTree {
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
-          scrollbar-width: none; /* Firefox */
+          scrollbar-width: none;
+          border: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          box-shadow: none !important;
         }
         
         /* Url Bar */
