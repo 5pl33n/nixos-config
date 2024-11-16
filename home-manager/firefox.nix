@@ -18,6 +18,7 @@
           font-family: Iosevka Web, Consolas, Courier, monospace;
           --main-color: #000000;
           --secondary-color: #008000;
+          border: none !important;
         }
         html,
         body {
