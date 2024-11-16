@@ -71,6 +71,10 @@
           border-bottom: 0px !important;
         }
 
+        #navigator-toolbox {
+          border: none !important;
+        }
+
         #nav-bar:not([tabs-hidden='true']) {
           box-shadow: none;
         }
