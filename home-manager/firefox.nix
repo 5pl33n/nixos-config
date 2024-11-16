@@ -66,8 +66,10 @@
           color: var(--secondary-color) !important;
         }
 
-        #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar):not(:-moz-lwtheme) {
-          margin-bottom: -1px !important;
+        #nav-bar{
+          border: none !important;
+          box-shadow: none !important;
+          position: fixed;
         }
 
         #TabsToolbar {
