@@ -19,6 +19,8 @@
           font-family: Iosevka Web, Consolas, Courier, monospace;
           --main-color: #000000;
           --secondary-color: #008000;
+          background-color: var(--main-color) !important;
+          color: var(--secondary-color) !important;
           border: none !important;
         }
         
