@@ -85,14 +85,14 @@
     enable = true;
     gtk3.extraCss = ''
       * {
-        background-color: #000000 !important;
-        color: #008000 !important;
+        background-color: #000000;
+        color: #008000;
       }
     '';
     gtk4.extraCss = ''
       * {
-        background-color: #000000 !important;
-        color: #008000 !important;
+        background-color: #000000;
+        color: #008000;
       }
     '';
   };
