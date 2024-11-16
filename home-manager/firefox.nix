@@ -32,15 +32,15 @@
           color: var(--secondary-color) !important;
         }
 
-        input:focus-visible {
-          outline: 2px solid #008000 !important;
-          border: 2px dashed #008000 !important;
-          border-radius: 3px;
-        }
-
         #urlbar:not(.hidden-focus)[focused="true"],
         .searchbar-textbox[focused="true"] {
           border-color: var(--secondary-color) !important;
+        }
+
+        *:focus,
+        *:focus-visble {
+          outline: 3px solid #008000 !important;
+          outline-offset: 3px !important;
         }
 
         #bookmarks-menu,
