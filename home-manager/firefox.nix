@@ -65,6 +65,18 @@
           color: #346751 !important;
         }
 
+        #nav-bar {
+          margin-top: -1px !important;
+        }
+
+        #TabsToolbar {
+          visibility: collapse;
+        }
+
+        #sidebar-header {
+          visibility: collapse !important;
+        }
+
         #identity-box {
           background-color: var(--main-color) !important;
           margin: 0;
