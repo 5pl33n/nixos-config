@@ -32,6 +32,22 @@
           color: var(--secondary-color) !important;
         }
 
+        #urlbar[focused='true'] > #urlbar-background {
+          box-shadow: none !important;
+        }
+
+        #urlbar-input-container {
+          border: 1px solid rgba(0, 0, 0, 0) !important;
+        }
+
+        #urlbar-container {
+          margin-left: 0 !important;
+        }
+
+        #navigator-toolbox {
+          border: none !important;
+        }
+
         #urlbar:not(.hidden-focus)[focused="true"],
         .searchbar-textbox[focused="true"] {
           border-color: var(--secondary-color) !important;
