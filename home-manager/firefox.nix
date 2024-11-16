@@ -31,8 +31,9 @@
           color: var(--secondary-color) !important;
         }
 
-        .searchInput:focus {
-          border-color: #008000 !important;
+        #urlbar:not(.hidden-focus)[focused="true"],
+        .searchbar-textbox[focused="true"] {
+          border-color: var(--secondary-color) !important;
         }
 
         #bookmarks-menu,
