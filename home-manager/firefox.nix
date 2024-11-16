@@ -37,7 +37,8 @@
         .sidebar-placesTree {
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
-          scrollbar-width: none !important;
+          scrollbar-color: #008000 #000000 !important;
+          scrollbar-width: thin;
           border: none !important;
           margin: 0 !important;
           padding: 0 !important;
