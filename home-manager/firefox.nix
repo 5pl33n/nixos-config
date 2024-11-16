@@ -66,10 +66,12 @@
           color: var(--secondary-color) !important;
         }
 
-        #nav-bar{
-          border: none !important;
+        #navigator-toolbox::after {
+          border-bottom: 0px !important;
+        }
+        #nav-bar {
           box-shadow: none !important;
-          position: fixed;
+          border-top: none !important;
         }
 
         #TabsToolbar {
