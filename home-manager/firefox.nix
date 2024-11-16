@@ -27,7 +27,7 @@
         }
         #bookmarks-menu,
         tab {
-          font-size: 18px !important;
+          visibility: collapse;
         }
         ::-moz-placeholder {
           color: red;
