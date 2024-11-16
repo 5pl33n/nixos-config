@@ -142,6 +142,7 @@
 
         :root {
           --toolbarbutton-border-radius: 0 !important;
+          --toolbarbutton-color: #008000 !important;
           --tab-border-radius: 0 !important;
           --tab-block-margin: 0 !important;
         }
