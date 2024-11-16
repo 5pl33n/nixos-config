@@ -44,11 +44,11 @@
         #urlbar[focused="true"] > #urlbar-background,
         #urlbar-input-container {
           box-shadow: none !important;
-          border: 1px solid transparent !important;
+          border: none solid transparent !important;
         }
         
         #urlbar-input-container:focus {
-          padding: 0 !important;
+          padding: none !important;
         }
         
         #urlbar:not(.hidden-focus)[focused="true"],
@@ -56,8 +56,8 @@
         *:focus,
         *:focus-visible {
           border-color: #008000 !important;
-          outline: 3px solid #008000 !important;
-          outline-offset: 3px !important;
+          outline: none solid #008000 !important;
+          outline-offset: none !important;
         }
         
         /* General Toolbar */
@@ -136,19 +136,6 @@
         #context_selectAllTabs,
         #context_closeTabOptions {
           display: none !important;
-        }
-        
-        /* Bookmarks Toolbar */
-        #PlacesToolbarItems toolbarbutton image {
-          display: none !important;
-        }
-        
-        .bookmark-item .toolbarbutton-icon {
-          display: none !important;
-        }
-        
-        toolbarbutton.bookmark-item:not(.subviewbutton) {
-          min-width: 1.6em;
         }
       '';
       userContent = ''
