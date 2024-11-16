@@ -131,7 +131,7 @@
         }
 
         #nav-bar:not([tabs-hidden='true']) {
-          box-shadow: none;
+          box-shadow: none !important;
         }
 
         #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
