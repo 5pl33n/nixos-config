@@ -72,7 +72,17 @@
           outline: none solid #008000 !important;
           outline-offset: none !important;
         }
-        
+
+        /* Menus and Dropdowns */
+        menu,
+        menuitem,
+        menulist,
+        .popup-notification {
+          background-color: var(--main-color) !important;
+          color: var(--secondary-color) !important;
+          border: none !important;
+        }
+
         /* General Toolbar */
         #navigator-toolbox,
         #urlbar-container {
