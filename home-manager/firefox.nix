@@ -55,16 +55,23 @@
           color: var(--secondary-color) !important;
           font-family: Iosevka Web, Consolas, Courier, monospace;
           background-color: var(--main-color) !important;
+          box-shadow: none !important;
+          padding: none !important;
+          border: none !important;
+          outline: none !important;
         }
         
         #urlbar[focused="true"] > #urlbar-background,
         #urlbar-input-container {
           box-shadow: none !important;
+          padding: none !important;
           border: none !important;
+          outline: none !important;
         }
         
         #urlbar-input-container:focus {
           padding: none !important;
+          box-shadow: none !important;
           border: none !important;
           outline: none !important;
         }
@@ -74,6 +81,7 @@
         *:focus,
         *:focus-visible {
           border: none !important;
+          box-shadow: none !important;
           outline: none !important;
           outline-offset: none !important;
         }
