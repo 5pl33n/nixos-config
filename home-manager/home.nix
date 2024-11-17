@@ -87,8 +87,8 @@
       * {
         background-color: #000000;
         color: #008000;
-        border-color: #008000;
-        outline-color: #008000;
+        border: none !important;
+        outline: none !important;
         -gtk-icon-palette: #008000;
         box-shadow: none;
       }
@@ -97,8 +97,8 @@
       * {
         background-color: #000000;
         color: #008000;
-        border-color: #008000;
-        outline-color: #008000;
+        border: none !important;
+        outline: none !important;
         -gtk-icon-palette: #008000;
         box-shadow: none;
       }
