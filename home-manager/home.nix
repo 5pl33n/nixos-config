@@ -89,11 +89,15 @@
         color: #008000;
         border-color: #008000;
         outline-color: #008000;
-        caret-color: #008000;
-        -gtk-secondary-caret-color: #008000;
-        text-decoration-color: #008000;
         -gtk-icon-palette: #008000;
         box-shadow: none;
+      }
+      *:focus {
+        color: #008000;
+        background-color: #000000;
+        outline-color: #008000;
+        outline-style: solid;
+        outline-width: 2px;
       }
     '';
     gtk4.extraCss = ''
@@ -102,11 +106,15 @@
         color: #008000;
         border-color: #008000;
         outline-color: #008000;
-        caret-color: #008000;
-        -gtk-secondary-caret-color: #008000;
-        text-decoration-color: #008000;
         -gtk-icon-palette: #008000;
         box-shadow: none;
+      }
+      *:focus {
+        color: #008000;
+        background-color: #000000;
+        outline-color: #008000;
+        outline-style: solid;
+        outline-width: 2px;
       }
     '';
   };
