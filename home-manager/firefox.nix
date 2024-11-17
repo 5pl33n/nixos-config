@@ -21,7 +21,7 @@
           --secondary-color: #008000;
           color: var(--secondary-color) !important;
           border: none !important;
-          outline: 2px solid #008000 !important;
+          outline: 1px solid #008000 !important;
           box-shadow: none !important;
         }
         
@@ -30,6 +30,7 @@
           border: none !important;
           margin: 0 !important;
           padding: 0 !important;
+          outline: 1px solid #008000 !important;
           box-shadow: none !important;
         }
         
@@ -59,7 +60,7 @@
         #urlbar[focused="true"] > #urlbar-background,
         #urlbar-input-container {
           box-shadow: none !important;
-          border: none solid transparent !important;
+          border: none !important;
         }
         
         #urlbar-input-container:focus {
@@ -70,8 +71,8 @@
         .searchbar-textbox[focused="true"],
         *:focus,
         *:focus-visible {
-          border-color: #008000 !important;
-          outline: none solid #008000 !important;
+          border: none !important;
+          outline: none !important;
           outline-offset: none !important;
         }
 
@@ -107,8 +108,8 @@
         /* Focused and Active States */
         *:focus,
         *:active {
-          outline: 3px solid var(--secondary-color) !important;
-          outline-offset: 2px;
+          outline: 1px solid var(--secondary-color) !important;
+          outline-offset: 1px;
         }
 
         /* General Toolbar */
@@ -147,20 +148,6 @@
         .tabbrowser-tab:not([pinned]) .tab-icon-image,
         .tab-close-button {
           display: none !important;
-        }
-        
-        /* Customizing Tabs Appearance */
-        .tabbrowser-tab[visuallyselected="true"] > .tab-stack > .tab-background {
-          box-shadow: none !important;
-        }
-        
-        .tabbrowser-tab {
-          border-right: 0 solid transparent !important;
-          margin-left: -4px !important;
-        }
-        
-        .tabbrowser-tab[last-visible-tab="true"] {
-          padding-inline-end: 0 !important;
         }
         
         /* Disable Context Menu Items */
