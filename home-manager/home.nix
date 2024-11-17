@@ -89,6 +89,7 @@
         color: #008000;
         border-color: #008000;
         outline-color: #008000;
+        caret-color: #008000;
       }
     '';
     gtk4.extraCss = ''
@@ -97,6 +98,7 @@
         color: #008000;
         border-color: #008000;
         outline-color: #008000;
+        caret-color: #008000;
       }
     '';
   };
