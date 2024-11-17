@@ -93,8 +93,8 @@
         box-shadow: none;
       }
         *:focus {
-          outline: 2px solid #008000;
-          outline-offset: 2px;
+          outline: 2px solid #008000 !important;
+          outline-offset: 2px !important;
         }
     '';
     gtk4.extraCss = ''
@@ -107,8 +107,8 @@
         box-shadow: none;
       }
       *:focus {
-        border: 2px solid #008000;
-        box-shadow: 0 0 5px #008000;
+        border: 2px solid #008000 !important;
+        box-shadow: 0 0 5px #008000 !important;
       }
     '';
   };
