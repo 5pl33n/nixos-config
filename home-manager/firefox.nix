@@ -38,6 +38,7 @@
         #sidebar,
         #sidebar-splitter,
         #sidebar-box,
+        #main-window,
         .sidebar-placesTree {
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
