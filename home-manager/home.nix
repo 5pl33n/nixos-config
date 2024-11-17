@@ -93,6 +93,7 @@
         -gtk-secondary-caret-color: #008000;
         text-decoration-color: #008000;
         -gtk-icon-palette: #008000;
+        box-shadow: none;
       }
     '';
     gtk4.extraCss = ''
@@ -105,6 +106,7 @@
         -gtk-secondary-caret-color: #008000;
         text-decoration-color: #008000;
         -gtk-icon-palette: #008000;
+        box-shadow: none;
       }
     '';
   };
