@@ -92,14 +92,10 @@
         -gtk-icon-palette: #008000;
         box-shadow: none;
       }
-      *:focus {
-        color: #008000;
-        background-color: #000000;
-        outline-color: #008000;
-        outline-style: solid;
-        outline-width: 2px;
-        box-shadow: none;
-      }
+        *:focus {
+          outline: 2px solid #008000;
+          outline-offset: 2px;
+        }
     '';
     gtk4.extraCss = ''
       * {
@@ -111,12 +107,8 @@
         box-shadow: none;
       }
       *:focus {
-        color: #008000;
-        background-color: #000000;
-        outline-color: #008000;
-        outline-style: solid;
-        outline-width: 2px;
-        box-shadow: none;
+        border: 2px solid #008000;
+        box-shadow: 0 0 5px #008000;
       }
     '';
   };
