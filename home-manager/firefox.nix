@@ -65,6 +65,7 @@
         
         #urlbar-input-container:focus {
           padding: none !important;
+          border: none !important;
         }
         
         #urlbar:not(.hidden-focus)[focused="true"],
