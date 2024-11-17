@@ -92,7 +92,7 @@
         border-right-color: #008000;
         border-bottom-color: #008000;
       }
-      entry { 
+      .entry { 
         border-color: #008000;
       }
     '';
@@ -105,7 +105,7 @@
         border-right-color: #008000;
         border-bottom-color: #008000;
       }
-      entry { 
+      .entry { 
         border-color: #008000;
       }
     '';
