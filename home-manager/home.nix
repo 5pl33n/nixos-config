@@ -90,6 +90,9 @@
         border-color: #008000;
         outline-color: #008000;
         caret-color: #008000;
+        -gtk-secondary-caret-color: #008000;
+        text-decoration-color: #008000;
+        -gtk-icon-palette: #008000;
       }
     '';
     gtk4.extraCss = ''
@@ -99,6 +102,9 @@
         border-color: #008000;
         outline-color: #008000;
         caret-color: #008000;
+        -gtk-secondary-caret-color: #008000;
+        text-decoration-color: #008000;
+        -gtk-icon-palette: #008000;
       }
     '';
   };
