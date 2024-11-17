@@ -100,7 +100,7 @@
   qt = {
     enable = true;
     platformTheme = {
-      name = "qtct";
+      name = "gtk";
     };
   };
 }
