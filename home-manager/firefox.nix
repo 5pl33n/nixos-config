@@ -21,7 +21,7 @@
           --secondary-color: #008000;
           color: var(--secondary-color) !important;
           border: none !important;
-          outline: 1px solid #008000 !important;
+          outline: none !important;
           box-shadow: none !important;
         }
         
