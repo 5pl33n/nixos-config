@@ -87,12 +87,14 @@
       * {
         background-color: #000000;
         color: #008000;
+        border-color: #008000;
       }
     '';
     gtk4.extraCss = ''
       * {
         background-color: #000000;
         color: #008000;
+        border-color: #008000;
       }
     '';
   };
