@@ -87,14 +87,20 @@
       * {
         background-color: #000000;
         color: #008000;
-        border-color: #008000;
+        border-top-color: #008000;
+        border-left-color: #008000;
+        border-right-color: #008000;
+        border-bottom-color: #008000;
       }
     '';
     gtk4.extraCss = ''
       * {
         background-color: #000000;
         color: #008000;
-        border-color: #008000;
+        border-top-color: #008000;
+        border-left-color: #008000;
+        border-right-color: #008000;
+        border-bottom-color: #008000;
       }
     '';
   };
