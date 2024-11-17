@@ -92,6 +92,9 @@
         border-right-color: #008000;
         border-bottom-color: #008000;
       }
+      entry { 
+        border-color: #008000;
+      }
     '';
     gtk4.extraCss = ''
       * {
@@ -101,6 +104,9 @@
         border-left-color: #008000;
         border-right-color: #008000;
         border-bottom-color: #008000;
+      }
+      entry { 
+        border-color: #008000;
       }
     '';
   };
