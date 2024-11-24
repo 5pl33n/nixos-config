@@ -6,7 +6,12 @@
     settings = {
       "$mainMod" = "SUPER";
 
-      monitor = [ ",1920x1080@60,0x0,1,bitdepth,10" "HDMI-A-1,1920x1080@60,1920x0,1,bitdepth,10" ];
+      monitor = [
+        ",1920x1080@60,0x0,1,bitdepth,10"
+        "HDMI-A-1,1920x1080@60,1920x0,1,bitdepth,10"
+        "HDMI-A-1,1920x1080@60,1920x0,1"
+        #",preferred,auto,1,mirror,eDP-1"
+      ];
 
       env = [
         "XCURSOR_SIZE,24"
