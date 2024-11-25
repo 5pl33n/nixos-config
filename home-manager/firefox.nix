@@ -18,7 +18,7 @@
         * {
           font-family: Iosevka Web, Consolas, Courier, monospace;
           --main-color: #000000;
-          --secondary-color: #008000;
+          --secondary-color: #00FF00;
           color: var(--secondary-color) !important;
           border: none !important;
           outline: none !important;
@@ -30,7 +30,7 @@
           border: none !important;
           margin: 0 !important;
           padding: 0 !important;
-          outline: 1px solid #008000 !important;
+          outline: 1px solid #00FF00 !important;
           box-shadow: none !important;
         }
         
@@ -42,7 +42,7 @@
         .sidebar-placesTree {
           background-color: var(--main-color) !important;
           color: var(--secondary-color) !important;
-          scrollbar-color: #008000 #000000 !important;
+          scrollbar-color: #00FF00 #000000 !important;
           scrollbar-width: thin;
           border: none !important;
           margin: 0 !important;
@@ -192,7 +192,7 @@
         @-moz-document url(about:blank), url(about:newtab), url(about:home), url(about:privatebrowsing) {
           html:not(#ublock0-epicker), body, #newtab-customize-overlay {
             background-color: #000000 !important;
-            color: #008000 !important;
+            color: #00FF00 !important;
           }
         
           .search-wrapper {

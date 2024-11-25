@@ -36,7 +36,7 @@
       ];
       extraConfig = ''
         set -g status-bg "#000000"
-        set -g status-fg "#008000"
+        set -g status-fg "#00FF00"
         set -g renumber-windows on
         set -g set-clipboard on
       '';
@@ -86,20 +86,20 @@
     gtk3.extraCss = ''
       * {
         background-color: #000000;
-        color: #008000;
+        color: #00FF00;
         border: none !important;
         outline: none !important;
-        -gtk-icon-palette: #008000;
+        -gtk-icon-palette: #00FF00;
         box-shadow: none;
       }
     '';
     gtk4.extraCss = ''
       * {
         background-color: #000000;
-        color: #008000;
+        color: #00FF00;
         border: none !important;
         outline: none !important;
-        -gtk-icon-palette: #008000;
+        -gtk-icon-palette: #00FF00;
         box-shadow: none;
       }
     '';
