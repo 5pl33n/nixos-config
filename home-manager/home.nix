@@ -3,7 +3,7 @@
     ./zsh.nix
     ./hyprland.nix
     ./waybar.nix
-    ./firefox.nix
+    ./firefox
   ];
 
   home = {
