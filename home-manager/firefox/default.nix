@@ -32,11 +32,7 @@
       SearchBar = "unified";
       ExtensionSettings = {
         "*".installation_mode = "blocked";
-        "FirefoxColor@mozilla.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/firefox-color/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "spleen@color" = {
+        "19d974e2547b7883f865d14d3ce26683dfd6a41b@temporary-addon" = {
           install_url = "/home/spleen/nixos-config/home-manager/theme.xpi";
           installation_mode = "force_installed";
         };
