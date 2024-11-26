@@ -35,7 +35,7 @@
         "FirefoxColor@mozilla.com" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/firefox_color/latest.xpi";
           installation_mode = "force_installed";
-        }
+        };
         "spleen@color" = {
           install_url = "./theme.xpi";
           installation_mode = "force_installed";
