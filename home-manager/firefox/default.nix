@@ -37,7 +37,7 @@
           installation_mode = "force_installed";
         };
         "spleen@color" = {
-          install_url = "./theme.xpi";
+          install_url = "/home/spleen/nixos-config/home-manager/theme.xpi";
           installation_mode = "force_installed";
         };
         "uBlock0@raymondhill.net" = {
