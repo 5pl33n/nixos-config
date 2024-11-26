@@ -31,7 +31,7 @@
       DisplayMenuBar = "default-off";
       SearchBar = "unified";
       ExtensionSettings = {
-        "*".installation_mode = "blocked";
+        #"*".installation_mode = "blocked";
         "359369749c627ccba99e5ae4b5f1a379b4b0fef3@temporary-addon" = {
           install_url = "/home/spleen/nixos-config/home-manager/theme.xpi";
           installation_mode = "force_installed";
