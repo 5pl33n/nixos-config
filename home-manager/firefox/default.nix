@@ -33,7 +33,7 @@
       ExtensionSettings = {
         #"*".installation_mode = "blocked";
         "359369749c627ccba99e5ae4b5f1a379b4b0fef3@temporary-addon" = {
-          install_url = "/home/spleen/nixos-config/home-manager/theme.xpi";
+          install_url = "https://github.com/5pl33n/nixos-config/blob/main/home-manager/firefox/theme.xpi";
           installation_mode = "force_installed";
         };
         "uBlock0@raymondhill.net" = {
