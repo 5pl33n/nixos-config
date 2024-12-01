@@ -32,7 +32,7 @@
       SearchBar = "unified";
       ExtensionSettings = {
         #"*".installation_mode = "blocked";
-        "359369749c627ccba99e5ae4b5f1a379b4b0fef3@temporary-addon" = {
+        "9495163df0704eb8121913425721c74cee8be6ed@temporary-addon" = {
           install_url = "https://github.com/5pl33n/nixos-config/blob/main/home-manager/firefox/theme.xpi";
           installation_mode = "force_installed";
         };
