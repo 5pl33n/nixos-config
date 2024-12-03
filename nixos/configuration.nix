@@ -42,7 +42,10 @@
     upower.enable = true;
     blueman.enable = true;
     getty.autologinUser = "spleen";
-    displayManager.enable = true;
+    displayManager = {
+      enable = true;
+      defaultSession = "";
+    };
   };
 
   networking ={
