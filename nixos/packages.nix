@@ -1,7 +1,4 @@
 { pkgs, ... }: {
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
   environment.systemPackages = with pkgs; [
     spaceship-prompt
     firefox
@@ -39,8 +36,5 @@
     swappy
     # Other
     home-manager
-  ];
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "CascadiaMono" "CascadiaCode" ]; })
   ];
 }

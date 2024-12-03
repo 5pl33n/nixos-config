@@ -30,12 +30,11 @@
       DisplayBookmarksToolbar = "never";
       DisplayMenuBar = "default-off";
       SearchBar = "unified";
+      Extensions = {
+        Install = [ "file:///home/spleen/nixos-config/home-manager/firefox/theme.xpi" ]
+      };
       ExtensionSettings = {
         #"*".installation_mode = "blocked";
-        "9495163df0704eb8121913425721c74cee8be6ed@temporary-addon" = {
-          install_url = "https://github.com/5pl33n/nixos-config/blob/main/home-manager/firefox/theme.xpi";
-          installation_mode = "force_installed";
-        };
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
           installation_mode = "force_installed";

@@ -14,8 +14,6 @@
       ];
 
       env = [
-        "XCURSOR_SIZE,24"
-        "QT_QPA_PLATFORMTHEME,qt6ct"
         "QT_QPA_PLATFORM,wayland;xcb"
         "GDK_BACKEND,wayland"
         "SDL_VIDEODIRIVER,wayland"
@@ -26,8 +24,6 @@
         "QT_AUTO_SCREEN_SCALE_FACTOR,1"
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
         "XDG_CONFIG_HOME,/home/spleen/.config"
-        "GTK_THEME,Catppuccin-Mocha"
-        "GTK2_RC_FILES,/home/spleen/.themes/Catppuccin-Mocha/gtk-2.0/gtkrc"
       ];
 
       debug = {

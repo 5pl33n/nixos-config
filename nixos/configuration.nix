@@ -1,7 +1,11 @@
-{ inputs, config, pkgs, nur, ...}: {
+{ inputs, config, pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
     ./packages.nix
+  ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "CascadiaMono" "CascadiaCode" ]; })
   ];
 
   environment.variables = {
