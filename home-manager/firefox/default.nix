@@ -31,7 +31,7 @@
       DisplayMenuBar = "default-off";
       SearchBar = "unified";
       Extensions = {
-        Install = [ "file:/home/spleen/nixos-config/home-manager/firefox/theme.xpi" ];
+        Install = [ "/home/spleen/nixos-config/home-manager/firefox/theme.xpi" ];
       };
       ExtensionSettings = {
         #"*".installation_mode = "blocked";
