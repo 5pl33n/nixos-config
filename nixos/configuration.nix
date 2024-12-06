@@ -40,7 +40,7 @@
       #jack.enable = true;
     };
     upower.enable = true;
-    blueman.enable = true;
+    #blueman.enable = true;
     displayManager = {
       enable = true;
       sddm = {
