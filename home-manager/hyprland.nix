@@ -32,10 +32,10 @@
       };
 
       input = {
-        kb_layout = "it";
+        kb_layout = "it,us";
         follow_mouse = 1;
         sensitivity = 0.5;
-        kb_options = "caps:swapescape";
+        kb_options = "caps:swapescape,grp:lalt_lshift_toggle";
         touchpad = {
           disable_while_typing = true;
           natural_scroll = true;
