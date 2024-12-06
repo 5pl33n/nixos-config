@@ -49,7 +49,7 @@
         settings = {
           Autologin = {
             Session = "hyprland.desktop";
-            User = "john";
+            User = "spleen";
           };
         };
       };
