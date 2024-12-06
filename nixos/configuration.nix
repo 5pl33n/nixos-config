@@ -41,10 +41,17 @@
     };
     upower.enable = true;
     blueman.enable = true;
-    getty.autologinUser = "spleen";
     displayManager = {
       enable = true;
-      sddm.wayland.enable = true;
+      sddm = {
+        wayland.enable = true;
+        settings = {
+          Autologin = {
+            Session = "hyprland.desktop";
+            User = "john";
+          };
+        };
+      };
       defaultSession = "hyprland";
     };
   };
