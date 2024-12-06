@@ -5,6 +5,7 @@
       settings = {
         "extensions.autoDisableScopes" = 0;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "xpinstall.signatures.required" = false;
       };
       userChrome = ''
       '';
@@ -31,7 +32,7 @@
       DisplayMenuBar = "default-off";
       SearchBar = "unified";
       Extensions = {
-        Install = [ "file:///home/spleen/nixos-config/home-manager/firefox/theme.xpi" ];
+        Install = [ "file://///home/spleen/nixos-config/home-manager/firefox/theme.xpi" ];
       };
       ExtensionSettings = {
         #"*".installation_mode = "blocked";
