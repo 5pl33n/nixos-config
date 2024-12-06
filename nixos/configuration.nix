@@ -44,6 +44,7 @@
     displayManager = {
       enable = true;
       sddm = {
+        enable = true;
         wayland.enable = true;
         settings = {
           Autologin = {
