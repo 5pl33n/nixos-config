@@ -35,7 +35,10 @@
         Install = [ "/home/spleen/nixos-config/home-manager/firefox/theme.xpi" ];
       };
       ExtensionSettings = {
-        #"*".installation_mode = "blocked";
+        #"*".installation_mode = "blocked"
+        "*.xpi" = {
+          installation_mode = "allowed";
+        };
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
           installation_mode = "force_installed";
