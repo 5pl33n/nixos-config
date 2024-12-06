@@ -44,6 +44,7 @@
     getty.autologinUser = "spleen";
     displayManager = {
       enable = true;
+      sddm.wayland.enable = true;
       defaultSession = "hyprland";
     };
   };
