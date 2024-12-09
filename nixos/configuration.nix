@@ -1,6 +1,6 @@
 { inputs, config, pkgs, ...}: {
   imports = [
-    ./hardware-configuration.nix
+    /etc/nixos/hardware-configuration.nix
     ./packages.nix
   ];
 
@@ -132,5 +132,5 @@
   time.timeZone = "Europe/Rome";
   i18n.defaultLocale = "en_US.UTF-8";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 }

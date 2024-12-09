@@ -10,7 +10,7 @@
 
         modules-left = ["cpu" "memory" "temperature"];
         modules-center = ["clock"];
-        modules-right = ["backlight" "wireplumber" "network" "battery"];
+        modules-right = ["wireplumber" "network" "battery"];
 
         "hyprland/workspaces" = {
           "all-outputs" = "true";
@@ -32,14 +32,6 @@
         "temperature" = {
           "format" = " {temperatureC}°C";
           "max-length" = "30";
-        };
-
-        "backlight" = {
-          "max-length" = "4";
-          "format" = "{icon} {percent}%";
-          "format-icons" = ["" "" "" "" "" "" "" "" ""];
-          "on-scroll-up" = "brightnessctl set 10%-";
-          "on-scroll-down" = "brightnessctl set +10%";
         };
 
         "wireplumber" = {
@@ -78,7 +70,7 @@
         };
       };
     };
-  
+
     style = ''
       @define-color foreground #008000;
       @define-color foreground-inactive #8FBC8F;

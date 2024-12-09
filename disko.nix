@@ -1,15 +1,15 @@
 {
   disko.devices = {
     disk = {
-      my-disk = {
-        device = "/dev/sda";
+      main = {
         type = "disk";
+        device = "/dev/sda";
         content = {
           type = "gpt";
           partitions = {
             ESP = {
+              size = "512M";
               type = "EF00";
-              size = "256M";
               content = {
                 type = "filesystem";
                 format = "vfat";
@@ -17,20 +17,39 @@
                 mountOptions = [ "umask=0077" ];
               };
             };
-            root = {
+            luks = {
               size = "100%";
               content = {
-                type = "filesystem";
-                format = "ext4";
-                mountpoint = "/";
+                type = "luks";
+                name = "crypted";
+                extraOpenArgs = [ ];
+                settings = {
+                  keyFile = "/tmp/secret.key";
+                  allowDiscards = true;
+                };
+                content = {
+                  type = "lvm_pv";
+                  vg = "pool";
+                };
               };
             };
-            swap = {
-              size = "4G";
-              content = {
-                type = "swap";
-                resumeDevice = true;
-              };
+          };
+        };
+      };
+    };
+    lvm_vg = {
+      pool = {
+        type = "lvm_vg";
+        lvs = {
+          root = {
+            size = "100%";
+            content = {
+              type = "filesystem";
+              format = "ext4";
+              mountpoint = "/";
+              mountOptions = [
+                "defaults"
+              ];
             };
           };
         };

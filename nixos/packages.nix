@@ -1,14 +1,11 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    spaceship-prompt
     firefox
-    nyxt
     # CLI utils
     busybox
     upower
     vim
     tree
-    eza
     wget
     git
     unzip

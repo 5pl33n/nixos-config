@@ -1,8 +1,8 @@
 {
-  description = "My system configuration";
+  description = "boh";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,7 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nixvim, ... }@inputs:
     let
       system = "x86_64-linux";
     in {
@@ -30,7 +30,7 @@
       };
       modules = [
         ./nixos/configuration.nix
-        inputs.nixvim.nixosModules.nixvim
+        nixvim.nixosModules.nixvim
       ];
     };
     homeConfigurations.spleen = home-manager.lib.homeManagerConfiguration {

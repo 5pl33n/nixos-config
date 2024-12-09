@@ -3,13 +3,13 @@
     ./zsh.nix
     ./hyprland.nix
     ./waybar.nix
-    ./firefox
+    ./firefox.nix
   ];
 
   home = {
     username = "spleen";
     homeDirectory = "/home/spleen";
-    stateVersion = "24.05";
+    stateVersion = "24.11";
     pointerCursor = {
       package = pkgs.phinger-cursors;
       name = "phinger-cursors-dark";

@@ -9,8 +9,7 @@
       monitor = [
         ",1920x1080@60,0x0,1,bitdepth,10"
         "HDMI-A-1,1920x1080@60,1920x0,1,bitdepth,10"
-        ",1920x1080@60,1920x0,1"
-        #",preferred,auto,1,mirror,eDP-1"
+        #",preferred,auto,1,mirror"
       ];
 
       env = [
@@ -27,8 +26,8 @@
       ];
 
       debug = {
-        disable_logs = false;
-        enable_stdout_logs = true;
+        disable_logs = true;
+        enable_stdout_logs = false;
       };
 
       input = {
@@ -83,35 +82,25 @@
 
       exec-once = [
         "${pkgs.waybar}/bin/waybar"
-        "dunst"
-        "blueman-applet"
-        "/usr/lib/polkit-kde-authentication-agent-1"
-        "~/.config/hypr/scripts/xdph.sh"
-        "wl-paste --type text --watch cliphist store"
-        "wl-paste --type image --watch cliphist store"
-        "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+        "${pkgs.dunst}/bin/dunst"
+        "${pkgs.wl-paste}/bin/wl-paste --type text --watch cliphist store"
+        "${pkgs.wl-paste}/bin/wl-paste --type image --watch cliphist store"
       ];
 
       bind = [
-        "$mainMod, T, exec, alacritty"
+        "$mainMod, T, exec, ${pkgs.alacritty}/bin/alacritty"
         "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
         "$mainMod, W, togglefloating,"
-        "$mainMod, R, exec, $menu"
         "$mainMod, J, togglesplit,"
-        "$mainMod, F, exec, firefox"
-        "$mainMod, L, exec, swaylock"
-        "$mainMod, A, exec, tofi-drun --drun-launch=true"
-        "$mainMod, backspace, exec, wlogout -b 6 -c 0 -r 0 -m 0 --protocol layer-shell"
-        "$mainMod, V, exec, cliphist list | tofi | cliphist decode | wl-copy"
+        "$mainMod, F, exec, ${pkgs.firefox}/bin/firefox"
+        "$mainMod, L, exec, ${pkgs.swaylock}/bin/swaylock"
+        "$mainMod, A, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
+        "$mainMod, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.tofi}/bin/tofi | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-copy}/bin/wl-copy"
         "ALT, return, fullscreen,"
-        "$mainMod, J, togglesplit,"
 
         # Screenshot/Screencapture
-        "$mainMod, P, exec, ~/.config/hypr/scripts/screenshot.sh s # drag to snip an area / click on a window to print it"
-        "$mainMod CTRL, P, exec, ~/.config/hypr/scripts/screenshot.sh sf # frozen screen, drag to snip an area / click on a window to print it"
-        "$mainMod ALT, P, exec, ~/.config/hypr/scripts/screenshot.sh m # print focused monitor"
-        ",print, exec, ~/.config/hypr/scripts/screenshot.sh p  # print all monitor outputs"
+        "$mainMod, P, exec, grimblast copysave screen - | swappy -f -"
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left, movefocus, l"
