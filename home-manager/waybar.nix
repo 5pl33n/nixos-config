@@ -65,7 +65,7 @@
             "critical" = "15";
           };
           "max-length" = "20";
-          "format" = "{icon} {capacity}%";
+          "format" = "{icon}  {capacity}%";
           "format-charging" = " {capacity}%";
           "format-plugged" = " {capacity}%";
           "format-alt" = "{icon} {time}";
