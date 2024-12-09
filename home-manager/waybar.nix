@@ -42,13 +42,6 @@
           "on-scroll-down" = "brightnessctl set +10%";
         };
 
-        "custom/dunst" = {
-          "exec" = "~/.config/waybar/scripts/dunst.sh";
-          "on-click" = "dunstctl set-paused toggle";
-          "restart-interval" = "1";
-          "tooltip" = "false";
-        };
-
         "wireplumber" = {
           "format" = "{icon}  {volume}%";
           "format-muted" = " 󰖁  ";
@@ -81,7 +74,7 @@
         };
 
         "clock" = {
-          "format" = "{:%d.%m.%Y | %H:%M}";
+          "format" = "{:%d.%m | %H:%M}";
         };
       };
     };
