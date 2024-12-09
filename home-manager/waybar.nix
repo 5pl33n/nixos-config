@@ -58,7 +58,7 @@
         };
 
         "network" = {
-          "format-wifi" = "󰖩  {signalStrength}%";
+          "format-wifi" = "󰖩 {signalStrength}%";
           "format-ethernet" = " 󰈀  ";
           "format-disconnected" = "  ";
         };
