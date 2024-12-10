@@ -53,7 +53,7 @@
       decoration = {
         rounding = 0;
         blur = {
-            enabled = false;
+          enabled = false;
         };
       };
 
@@ -100,7 +100,7 @@
         "ALT, return, fullscreen,"
 
         # Screenshot/Screencapture
-        "$mainMod, P, exec, grimblast copysave screen - | swappy -f -"
+        "$mainMod, P, exec, ${pkgs.grimblast}/bin/grimblast copysave screen - | ${pkgs.swappy}/bin/swappy -f -"
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left, movefocus, l"
@@ -169,8 +169,8 @@
       ];
 
       bindel = [
-        ", XF86MonBrightnessUp, exec, brightnessctl set +5%"
-        ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+        ", XF86MonBrightnessUp, exec, ${pkgs.brightnessctl}/bin/brightnessctl set +5%"
+        ", XF86MonBrightnessDown, exec, ${pkgs.brightnessctl}/bin/brightnessctl set 5%-"
       ];
     };
   };

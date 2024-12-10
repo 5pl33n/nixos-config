@@ -36,11 +36,9 @@
       alsa.enable = true;
       alsa.support32Bit = true;
       pulse.enable = true;
-      # If you want to use JACK applications, uncomment this
-      #jack.enable = true;
+      jack.enable = true;
     };
     upower.enable = true;
-    #blueman.enable = true;
     displayManager = {
       enable = true;
       sddm = {
@@ -53,7 +51,6 @@
           };
         };
       };
-      defaultSession = "hyprland";
     };
   };
 
@@ -114,7 +111,12 @@
           variant = "default";
         };
       };
-      plugins.lualine.enable = true;
+      plugins = {
+        lualine.enable = true;
+        telescope = {
+          enable = true;
+        };
+      };
       opts = {
         number = true;
         relativenumber = true;
@@ -123,7 +125,6 @@
         expandtab = true;
       };
     }; 
-
     zsh.enable = true;
     hyprland.enable = true;
   };

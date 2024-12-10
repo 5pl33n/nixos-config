@@ -11,7 +11,7 @@
       rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
       upd = "nix flake update --flake ${flakeDir}";
       upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
-      hms = "home-manager switch --flake ${flakeDir}";
+      hms = "${pkgs.home-manager}/bin/home-manager switch --flake ${flakeDir}";
       conf = "nvim ${flakeDir}/nixos/configuration.nix";
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
       l = "${pkgs.waybar}/bin/eza -lh  --icons=auto";
