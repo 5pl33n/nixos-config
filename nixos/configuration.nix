@@ -83,8 +83,8 @@
     };
     # boot.initrd.kernelModules = [ "amdgpu" ];
     kernelParams = [ "psmouse.synaptics_intertouch=0" ];
-    initrd.luks.devices.cryptroot = {
-      device = "/dev/disk/by-uuid/UUID-OF-SDA2";
+    initrd.luks.devices.crypted = {
+      device = "/dev/disk/by-uuid/<<DISK>>";
       preLVM = true;
       allowDiscards = true;
     };
