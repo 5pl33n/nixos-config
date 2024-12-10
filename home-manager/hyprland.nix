@@ -83,8 +83,8 @@
       exec-once = [
         "${pkgs.waybar}/bin/waybar"
         "${pkgs.dunst}/bin/dunst"
-        "${pkgs.wl-paste}/bin/wl-paste --type text --watch cliphist store"
-        "${pkgs.wl-paste}/bin/wl-paste --type image --watch cliphist store"
+        "${pkgs.wl-clipboard}/bin/wl-paste --type text --watch ${pkgs.cliphist}/bin/cliphist store"
+        "${pkgs.wl-clipboard}/bin/wl-paste --type image --watch ${pkgs.cliphist}/bin/cliphist store"
       ];
 
       bind = [
@@ -96,7 +96,7 @@
         "$mainMod, F, exec, ${pkgs.firefox}/bin/firefox"
         "$mainMod, L, exec, ${pkgs.swaylock}/bin/swaylock"
         "$mainMod, A, exec, ${pkgs.tofi}/bin/tofi-drun --drun-launch=true"
-        "$mainMod, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.tofi}/bin/tofi | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-copy}/bin/wl-copy"
+        "$mainMod, V, exec, ${pkgs.cliphist}/bin/cliphist list | ${pkgs.tofi}/bin/tofi | ${pkgs.cliphist}/bin/cliphist decode | ${pkgs.wl-clipboard}/bin/wl-copy"
         "ALT, return, fullscreen,"
 
         # Screenshot/Screencapture

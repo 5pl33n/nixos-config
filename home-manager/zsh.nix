@@ -14,10 +14,10 @@
       hms = "${pkgs.home-manager}/bin/home-manager switch --flake ${flakeDir}";
       conf = "nvim ${flakeDir}/nixos/configuration.nix";
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
-      l = "${pkgs.waybar}/bin/eza -lh  --icons=auto";
-      ls = "${pkgs.waybar}/bin/eza -1   --icons=auto";
-      ll = "${pkgs.waybar}/bin/eza -lha --icons=auto --sort=name --group-directories-first";
-      ld = "${pkgs.waybar}/bin/eza -lhD --icons=auto";
+      l = "${pkgs.eza}/bin/eza -lh  --icons=auto";
+      ls = "${pkgs.eza}/bin/eza -1   --icons=auto";
+      ll = "${pkgs.eza}/bin/eza -lha --icons=auto --sort=name --group-directories-first";
+      ld = "${pkgs.eza}/bin/eza -lhD --icons=auto";
       ".." = "cd ..";
       "..." = "cd ../..";
       ".3" = "cd ../../..";
