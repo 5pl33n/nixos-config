@@ -82,7 +82,12 @@
       efi.efiSysMountPoint = "/boot";
     };
     # boot.initrd.kernelModules = [ "amdgpu" ];
-    kernelParams = [ "psmouse.synaptics_intertouch=0" ]; 
+    kernelParams = [ "psmouse.synaptics_intertouch=0" ];
+    initrd.luks.devices.cryptroot = {
+      device = "/dev/disk/by-uuid/UUID-OF-SDA2";
+      preLVM = true;
+      allowDiscards = true;
+    };
   };
 
   programs = {
@@ -132,6 +137,7 @@
   console.keyMap = "it";
   time.timeZone = "Europe/Rome";
   i18n.defaultLocale = "en_US.UTF-8";
+  swapDevices = [{device = "/swapfile"; size = 10000;}];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "24.11";
 }
